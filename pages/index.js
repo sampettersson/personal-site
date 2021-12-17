@@ -88,7 +88,6 @@ export default () => (
           padding: 0;
         }
       `}</style>
-  <Me src="/static/me.jpg" />
   <ContentContainer>
     <h1>Sam Pettersson</h1>
     <Spacing height={10} />
