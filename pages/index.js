@@ -91,8 +91,6 @@ export default () => (
   <Me src="/static/me.jpg" />
   <ContentContainer>
     <h1>Sam Pettersson</h1>
-    <Spacing height={5} />
-    <p>App Developer at Hedvig</p>
     <Spacing height={10} />
     <Link href="mailto:sam@sampettersson.com">sam@sampettersson.com</Link>
   </ContentContainer>
