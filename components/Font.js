@@ -1,5 +1,6 @@
 
 
+export const FontLight = "HostGrotesk-Light"
 export const FontRegular = "HostGrotesk-Regular"
 export const FontMedium = "HostGrotesk-Medium"
 export const FontSemiBold = "HostGrotesk-SemiBold"
@@ -13,6 +14,11 @@ export const FontSetup = () => (
             src: url('/fonts/HostGrotesk-Regular.woff2');
         }
 
+        @font-face {
+            font-family: '${FontLight}';
+            src: url('/fonts/HostGrotesk-Light.woff2');
+        }
+        
         @font-face {
             font-family: '${FontMedium}';
             src: url('/fonts/HostGrotesk-Medium.woff2');

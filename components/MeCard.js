@@ -1,7 +1,8 @@
 import { Squircle } from "@squircle-js/react"
+import { motion } from "framer-motion"
 import styled from "styled-components"
 
-const Shadow = styled.div`
+const Shadow = styled(motion.div)`
     width: 55%;
     filter: drop-shadow(1px 0px 20.2px #000);
     margin-left: 20px;
@@ -22,7 +23,7 @@ const Card = styled(Squircle)`
 `
 
 export default () => (
-    <Shadow>
-            <Card cornerRadius={22} cornerSmoothing={1} />
+    <Shadow animate={{ opacity: [0, 1] }} transition={{ delay: 0.15 }}>
+        <Card cornerRadius={22} cornerSmoothing={1} />
     </Shadow>
 )
