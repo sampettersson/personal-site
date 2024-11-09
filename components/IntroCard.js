@@ -2,6 +2,8 @@ import styled from "styled-components"
 import { FontBold, FontLight, FontRegular } from "./Font"
 import { Squircle } from "@squircle-js/react"
 import { motion } from "framer-motion"
+import LinkedInSvg from "./../public/linkedin.svg"
+import GithubSvg from "./../public/github.svg"
 
 const Shadow = styled.div`
     width: 45%;
@@ -55,7 +57,7 @@ const Text = styled.div`
 
 const Hello = styled(motion.div)`
     font-family: '${FontRegular}';
-    color: #fff;
+    color: #000;
     font-size: 90px;
     mix-blend-mode: soft-light;
 
@@ -80,7 +82,7 @@ const Occupation = styled(motion.div)`
     font-family: '${FontBold}';
     padding-top: 20px;
     mix-blend-mode: soft-light;
-    color: #fff;
+    color: #000;
     font-size: 20px;
 
     @media (max-width: 1000px) {
@@ -91,30 +93,45 @@ const Occupation = styled(motion.div)`
 const Buttons = styled(motion.div)`
     display: flex;
     gap: 15px;
+    mix-blend-mode: soft-light;
 
     @media (max-width: 630px) {
         margin-top: 20px
     }
 `
 
+const transitionDuration = "250ms"
+
 const Button = styled(motion.a)`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: #fff;
+    color: #000;
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 17px;
-    font-family: ${FontLight};
+    font-family: ${FontRegular};
     text-decoration: none;
-    border: 1.5px solid #fff;
-    transition: background-color 250ms;
+    border: 1.5px solid #000;
+    transition: background-color ${transitionDuration}, color ${transitionDuration}, border ${transitionDuration}, box-shadow ${transitionDuration};
 
     &:hover {
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
     }
 
+    & img {
+        transition: filter ${transitionDuration};
+    }
+
+    &:hover svg {
+        filter: invert(100%);
+    }
+
+    &:active {
+        box-shadow: 0px 0px 0px 2px #000;
+    }
 `
 
 const EmailButton = styled(Button)`
@@ -126,13 +143,18 @@ const EmailButton = styled(Button)`
     }
 `
 
-const SocialImage = styled.img`
-    width: 30px;
-    height: 30px;
+const SocialImage = styled.div`
+    svg {
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
 
     @media (max-width: 1000px) {
-        width: 15px;
-        height: 15px;
+        svg {
+            width: 15px;
+            height: 15px;
+        }
     }
 `
 
@@ -163,8 +185,16 @@ export default () => (
                 transition={{ delay: 0.48, duration: 1.2 }}
             >
                 <EmailButton href="mailto:sam@sampettersson.com">Email</EmailButton>
-                <Button href="https://www.linkedin.com/in/sam-pettersson-aa8ab258/"><SocialImage src="linkedin.png" /></Button>
-                <Button href="https://github.com/sampettersson"><SocialImage src="github.svg" /></Button>
+                <Button href="https://www.linkedin.com/in/sam-pettersson-aa8ab258/">
+                    <SocialImage>
+                        <LinkedInSvg />
+                    </SocialImage>
+                </Button>
+                <Button href="https://github.com/sampettersson">
+                    <SocialImage>
+                        <GithubSvg />
+                    </SocialImage>
+                </Button>
             </Buttons>
         </Container>
     </Shadow>

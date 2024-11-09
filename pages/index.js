@@ -2,6 +2,7 @@ import styled from "styled-components"
 import Head from "next/head"
 import { FontSetup } from "../components/Font"
 import HeaderCards from "../components/HeaderCards"
+import WorkExperience from "../components/work-experience"
 
 const Content = styled.div`
   padding: 32px;
@@ -60,10 +61,12 @@ export default () => (
         * {
           margin: 0;
           padding: 0;
+          box-sizing: border-box;
         }
       `}</style>
   <div>
     <HeaderCards />
+    <WorkExperience />
   </div>
   </Content>
 )
