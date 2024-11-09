@@ -20,7 +20,9 @@ export default () => (
           background-color: #000;
           font-family: 'HostGrotesk-Medium', sans-serif;
           -webkit-font-smoothing: antialiased;
-          text-rendering: geometricPrecision;  
+          text-rendering: geometricPrecision;
+          //padding-top: 3000px;
+          //padding-bottom: 3000px;
         }
 
         body:before {
