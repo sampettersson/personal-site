@@ -1,7 +1,7 @@
 'use client';
 
 import { MeshGradientRenderer } from "@johnn-e/react-mesh-gradient";
-import styled from "styled-components";
+import styled from "styled-components"
 
 const StyledMeshGradient = styled(MeshGradientRenderer)`
     width: 100%;

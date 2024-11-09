@@ -1,14 +1,14 @@
+'use client';
+
 import styled from "styled-components"
 import Head from "next/head"
-import { FontSetup } from "../components/Font"
-import HeaderCards from "../components/HeaderCards"
-import WorkExperience from "../components/work-experience"
+import { FontSetup } from "./Font"
 
 const Content = styled.div`
   padding: 32px;
 `
 
-export default () => (
+export default ({ children }) => (
   <Content>
   <Head>
     <title>Sam Pettersson</title>
@@ -67,8 +67,7 @@ export default () => (
         }
       `}</style>
   <div>
-    <HeaderCards />
-    <WorkExperience />
+    {children}
   </div>
   </Content>
 )

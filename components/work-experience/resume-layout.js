@@ -58,10 +58,6 @@ const Column = styled.div`
 
 const Titles = styled.div`
     text-align: right;
-
-    & >:last-child {
-        border-bottom: none !important;
-    }
 `
 
 export default ({ company, companySummary, titles, projects, style, contentRef }) => (
@@ -74,7 +70,7 @@ export default ({ company, companySummary, titles, projects, style, contentRef }
             </div>
             <Titles>
                 {titles.map(title =>
-                    <Column showBorder key={title.name}>
+                    <Column key={title.name}>
                         <TitleName>
                             {title.name}
                         </TitleName>

@@ -8,7 +8,7 @@ export const FontBold = "HostGrotesk-Bold"
 export const FontExtraBold = "HostGrotesk-ExtraBold"
 
 export const FontSetup = () => (
-    <style jsx global>{`
+    <style>{`
         @font-face {
             font-family: '${FontRegular}';
             src: url('/fonts/HostGrotesk-Regular.woff2');

@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components"
 import { FontBold } from "../Font"
 import ResumeEntry from "./resume-entry"

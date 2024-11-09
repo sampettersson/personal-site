@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 import { Squircle } from "@squircle-js/react";
 import { motion } from "framer-motion";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
@@ -27,7 +27,6 @@ export default (props) => {
     const elementRef = useRef();
     const rootRef = useRef();
 
-    // Update dimensions on window resize
     const updateDimensions = () => {
         const newWidth = window.innerWidth - 60;
         elementRef.current.style.width = `${newWidth}px`;
@@ -101,7 +100,6 @@ export default (props) => {
                     height={dimensions.height}
                 >
                     <motion.div animate={{ opacity: isInViewport ? 1 : 0 }}>
-
                         <ResumeLayout {...props} />
                     </motion.div>
                 </Container>

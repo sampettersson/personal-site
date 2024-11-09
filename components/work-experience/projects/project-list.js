@@ -10,7 +10,7 @@ export default ({ projects }) => (
      <List>
     {
         projects.map(project => (
-            <ProjectCard project={project} />
+            <ProjectCard key={project} project={project} />
         ))
     }
 </List>
