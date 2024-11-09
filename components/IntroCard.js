@@ -31,11 +31,11 @@ const Container = styled(Squircle)`
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
-        width: 200%;
-        height: 200%;
-        left: -50%;
-        top: -50%;
-        animation: rotate-in 0.9s;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        animation: rotate-in 0.5s;
         z-index: -1;
     }
 
