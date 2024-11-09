@@ -64,19 +64,13 @@ const Titles = styled.div`
     }
 `
 
-export default ({ company, companySummary, titles, style, contentRef }) => (
+export default ({ company, companySummary, titles, projects, style, contentRef }) => (
     <Content style={style} ref={contentRef}>
         <Row>
             <div>
                 <Company>{company}</Company>
                 <CompanySummary>{companySummary}</CompanySummary>
-                <Projects projects={[
-                    {},
-                    {},
-                    {},
-                    {}
-                ]} />
-
+                <Projects projects={projects ?? []} />
             </div>
             <Titles>
                 {titles.map(title =>

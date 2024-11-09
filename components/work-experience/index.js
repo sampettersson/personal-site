@@ -29,6 +29,16 @@ const resumeEntries = [
                 from: "May 2023",
                 to: "Sep 2024"
             }
+        ],
+        projects: [
+            {
+                name: "Meta Layer",
+                card: {
+                    image: "projects/meta-layer/card.png",
+                    title: "3D Rendering",
+                    subtitle: "Using Rust on iOS and Android"
+                }
+            }
         ]
     },
     {
@@ -61,7 +71,9 @@ const resumeEntries = [
         `,
         titles: [
             {
-                name: "Web Developer"
+                name: "Web Developer",
+                from: "Oct 2016",
+                to: "July 2018"
             }
         ]
     },
@@ -72,7 +84,9 @@ const resumeEntries = [
         `,
         titles: [
             {
-                name: "Web Developer"
+                name: "Web Developer",
+                from: "May 2015",
+                to: "Aug 2016s"
             }
         ]
     }
