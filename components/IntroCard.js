@@ -27,7 +27,7 @@ const Container = styled(Squircle)`
 
     &:before {
         content: "";
-        background-image: url('IntroCard-Background.svg');
+        background-image: url('IntroCard-Background.png');
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;

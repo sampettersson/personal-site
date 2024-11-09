@@ -34,7 +34,7 @@ export default () => (
           z-index: -1;
           background-size: cover;
           background-attachment: fixed;
-          background-image: url('IntroCard-Background.svg');
+          background-image: url('IntroCard-Background.png');
           animation-duration: 1.2s;
           corner-radius: 30px;
           overflow: hidden;
