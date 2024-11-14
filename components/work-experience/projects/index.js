@@ -2,7 +2,7 @@ import styled from "styled-components"
 import ProjectList from "./project-list"
 
 const Root = styled.div`
-    margin-top: 30px;
+    margin-top: 10px;
 `
 
 const Title = styled.h4`
@@ -11,9 +11,12 @@ const Title = styled.h4`
 `
 
 export default ({ projects }) => {
+    if (projects.length == 0) {
+        return null
+    }
+
     return <Root>
         <Title>Projects</Title>
-
         <ProjectList projects={projects} />
     </Root>
 }

@@ -10,7 +10,7 @@ const Root = styled.div`
 `;
 
 const ResumeEntryContainer = styled(motion.div)`
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     transform-style: preserve-3d;
 `;
 
@@ -60,7 +60,7 @@ export default (props) => {
             {
                 root: null,
                 rootMargin: "0px",
-                threshold: 0.1,
+                threshold: 0.22,
             }
         );
 
@@ -84,11 +84,13 @@ export default (props) => {
                     opacity: 1.0,
                     rotateX: 0,
                     scaleX: 1.0,
+                    y: 0,
                     originY: transformOrigin == "top" ? 0 : 1
                 } : {
                     opacity: 0.8,
                     rotateX: transformOrigin === "top" ? -70 : 70,
-                    scaleX: 0.95,
+                    scaleX: 0.98,
+                    y: -15,
                     originY: transformOrigin == "top" ? 0 : 1
                 }}
                 transition={{ type: "spring", stiffness: 250, damping: 30 }}

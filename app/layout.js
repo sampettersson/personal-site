@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { FontSetup } from "../components/Font"
 import StyledComponentsRegistry from "./registry";
+import Footer from "../components/Footer";
 
 export const metadata = {
     title: "Sam Pettersson",
@@ -15,9 +16,10 @@ export default ({ children }) => (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </Head>
   <body>
-    <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-
-
+    <StyledComponentsRegistry>
+      {children}
+      <Footer />
+    </StyledComponentsRegistry>
     <FontSetup />
   <style >{`
         body {

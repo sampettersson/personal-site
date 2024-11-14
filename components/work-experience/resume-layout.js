@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { FontBold, FontLight } from "../Font"
+import { FontBold, FontExtraBold, FontLight, FontMedium } from "../Font"
 import Projects from "./projects"
 
 const Content = styled.div`
@@ -11,7 +11,7 @@ const Content = styled.div`
 
 const Company = styled.h1`
     font-size: 30px;
-    font-family: ${FontBold};
+    font-family: ${FontExtraBold};
     color: #fff;
     margin-top: -8px;
 `
@@ -19,14 +19,13 @@ const Company = styled.h1`
 const CompanySummary = styled.p`
     font-size: 12px;
     font-family: ${FontLight};
-    color: #fff;
-    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.6);
     max-width: 500px;
 `
 
 const TitleName = styled.h3`
     font-size: 17px;
-    font-family: ${FontBold};
+    font-family: ${FontMedium};
     color: #fff;
     margin-bottom: 3px;
 `
@@ -34,7 +33,7 @@ const TitleName = styled.h3`
 const TitleDuration = styled.span`
     font-size: 12px;
     font-family: ${FontLight};
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
     padding-bottom: 8px;
 `
 
