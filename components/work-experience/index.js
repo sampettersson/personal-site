@@ -43,14 +43,7 @@ const resumeEntries = [
             }
         ],
         projects: [
-            {
-                name: "Meta Layer",
-                card: {
-                    image: "projects/meta-layer/card.png",
-                    title: "3D Rendering",
-                    subtitle: "Using Rust on iOS and Android"
-                }
-            }
+            
         ]
     },
     {
