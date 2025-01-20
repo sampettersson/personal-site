@@ -42,6 +42,10 @@ const Row = styled.div`
     width: 100%;
     justify-content: space-between;
 
+    @media (max-width: 630px) {
+        flex-direction: column;
+    }
+
     ${props => props.showBorder ? `
         border-bottom: 0.5px solid #fff;
         margin-bottom: 5px;
@@ -57,6 +61,11 @@ const Column = styled.div`
 
 const Titles = styled.div`
     text-align: right;
+
+    @media (max-width: 630px) {
+        text-align: left;
+        margin-top: 20px;
+    }
 `
 
 export default ({ company, companySummary, titles, projects, style, contentRef }) => (

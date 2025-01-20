@@ -23,6 +23,7 @@ const Subtitle = styled.h1`
     font-family: ${FontLight};
     color: rgba(255, 255, 255, 0.8);
     margin-left: 30px;
+    margin-right: 30px;
     max-width: 700px;
     line-height: 22px;
     word-break: auto-phrase;
