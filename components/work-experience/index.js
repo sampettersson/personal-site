@@ -32,6 +32,22 @@ const Subtitle = styled.h1`
 
 const resumeEntries = [
     {
+        company: "Snap Inc.",
+        companySummary: `
+            Technology company behind Snapchat.
+        `,
+        titles: [
+            {
+                name: "Software Engineer",
+                from: "Feb 2025",
+                to: "Present"
+            }
+        ],
+        projects: [
+            
+        ]
+    },
+    {
         company: "GeoGuessr",
         companySummary: `
             Game Studio behind GeoGuessr, a geography-based game with over 50 million registered players worldwide, offering a unique experience that challenges users to recognize global locations and navigate diverse environments.
